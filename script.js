@@ -25,3 +25,11 @@ function deleteLast(){
     display.innerText='0';
   }
 }
+function calculateResult(){
+  try{
+    display.innerText = eval(display.innerText.replace(/÷/g, '/').replace(/×/g, '*'));
+
+  }catch{
+    display.innerText='Error'
+  }
+}
