@@ -14,5 +14,7 @@ function appendOperator(op){
   }else{
     display.innerText+=op;
   }
-  
+}
+function clearDisplay(){
+  display.innerText='0';
 }
