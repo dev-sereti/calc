@@ -7,3 +7,12 @@ function appendNumber(num) {
     display.innerText += num;
   }
 }
+function appendOperator(op){
+  const lastChar = display.innerText.slice(-1);
+  if('+-*/%'.includes(lastChar)){
+    display.innerText=innerText.slice(0,-1)+op;
+  }else{
+    display.innerText+=op;
+  }
+  
+}
